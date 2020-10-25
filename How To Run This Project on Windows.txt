@@ -1,0 +1,8 @@
+Steps to Run Faster RCNN:
+1-Download this project in any folder you want.
+2-Open command prompt and change directory to that folder.
+3-Go inside BloodCellClassification folder(cd BloodCellClassification) and then run "pip install -r requirement.txt" on cmd.
+4- In this project tensorflow 1.8 is used which is compatable with python 3.5 or 3.6. So to run this you have to "pip install python==3.6 /3.5" or "conda install python==3.6/3.5".
+5- Second need of this project is you must have tensorflow 1.8.0. For this "pip install tensorflow=1.8.0".
+6-Now you are good to go. Start training your model by "python train_frcnn.py -o simple -p annotate.txt". It takes a lot of time to train on CPU.You can also run this project on colab and use GPU.But for this file path should be changed accordingly in annotate.txt.
+7-After completing training start testing your model by "python test_frcnn.py -p test_images".
